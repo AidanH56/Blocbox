@@ -36,37 +36,14 @@ p {
 .container:after{
 	clear: both;
 }
-.one-half, one-third, one-fourth{
+.one-half, .one-third, .one-fourth{
 	width: 96%;
 	float: left;
-	position: relative;
 	min-height: 1px;
 	margin: 0 2% 20px;
 }
-
-@media (min-width: 768px){
-	.container {
-		width: 750px;
-	}
-}
-@media (min-width: 992px) {
-	.container {
-		width: 970px;
-	}
-	.one-half{
-		width:46%;
-	}
-	.one-third {
-		width:29.33333%;
-	}
-	.one-fourth{
-		width:21%;
-	}
-}
-@media (min-width: 1200px) {
-	.container{
-		width: 1170px;
-	}
+.one-third{
+	margin-bottom: 70px;
 }
 
 /* Header */
@@ -88,7 +65,8 @@ header nav ul{
 header nav ul > li {
    list-style-type: none;
    display: inline-block;
-   margin:0 15px;
+   position: relative;
+   margin:-10px 10px;
 }
 header nav ul > li.btn-outline {
    padding:10px 15px;
@@ -127,7 +105,7 @@ header nav ul > li.btn-outline {
  }
 
   /* BUTTONS */
- .btn {
+  .btn-hero {
    border-radius: 4px;
    color:#FFFFFF;
    font-weight: 700;
@@ -137,3 +115,85 @@ header nav ul > li.btn-outline {
    border: 2px solid #73ADFF;
    box-shadow: 0px 2px 0px 0px #395780;
  }
+ .btn {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   margin-top: 10px;
+   background : #73ADFF;
+   border: 2px solid #73ADFF;
+   box-shadow: 0px 2px 0px 0px #395780;
+   position: absolute;
+ }
+
+/* Media Queries */
+
+@media only screen 
+	and (min-width: 768px){
+	.container {
+		width: 750px;
+	}
+	.one-half{
+		width: 46%;
+	}
+	.one-third{
+		width: 28%;
+	}
+	.one-fourth{
+		width: 30%;
+	}
+}
+@media only screen 
+	and (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+	.one-half{
+		width:46%;
+	}
+	.one-third {
+		width:29.33333%;
+	}
+	.one-fourth{
+		width:21%;
+	}
+}
+@media only screen 
+	and (min-width: 1200px) {
+	.container{
+		width: 1170px;
+	}
+}
+
+ /* CHKPT 28 Assignment Mobile Media Query */
+
+@media only screen 
+	and (max-width: 320px) {
+  	.container{
+  		width: 320px;
+  	}
+  	header .hero h1 {
+   	    font-size:40px;
+    }
+ 	header .hero p {
+  	    font-size: 14px;
+    }
+  	header .hero h1 {
+   		font-size:38px;
+
+ 	}
+ 	header .hero p {
+   		font-size: 12px;
+ 	}
+ 	.btn{
+ 		padding: 10px 10px;
+ 	}
+ 	header nav ul > li{
+ 		margin: 7px 15px;
+ 	}
+ 	header nav ul > li.btn-outline{
+ 		padding: 5px 15px;
+ 	}
+  }
