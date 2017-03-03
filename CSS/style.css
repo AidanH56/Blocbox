@@ -278,6 +278,9 @@ header nav ul > li.btn-outline {
    font-size:13px;
    margin-top: 30px;
  }
+ .quote-shift{
+ 	margin-top: 20px;
+ }
 
 /* Media Queries */
 
