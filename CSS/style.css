@@ -37,11 +37,23 @@ p {
 .container:after{
 	clear: both;
 }
-.one-half, .one-third, .one-fourth{
+.one-third, .one-fourth{
 	width: 96%;
 	float: left;
 	min-height: 1px;
 	margin: 0 2% 20px;
+}
+.one-half{
+	width: 96%;
+	float: left;
+	min-height: 1px;
+	margin: 0 2% 20px;
+}
+.one-half-buttons{
+	width: 96%;
+	float: left;
+	min-height: 1px;
+	margin: -55px 6% 20px;
 }
 .one-third{
 	margin-bottom: 70px;
@@ -88,6 +100,7 @@ header nav ul > li.btn-outline {
    text-align: center;
    display:block;
    position: relative;
+   margin-left: 45px;
  }
  header .hero h1 {
    font-size:48px;
@@ -287,6 +300,16 @@ header nav ul > li.btn-outline {
  	margin-top: 20px;
  }
 
+ /* MONEY BACK GUARANTEE*/
+ .money-back h2{
+ 	margin-left: 30px;
+ }
+
+ .money-back p{
+ 	margin-left: 30px;
+ 	text-align: left;
+ }
+
 /* FOOTER */
 
  footer {
@@ -322,31 +345,53 @@ header nav ul > li.btn-outline {
    display: block;
  }
 
- /* Media Queries for CHKPT 31*/
+ /* Media Queries*/
 
- @media (min-width: 992px){
-   footer{
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
-     height: 100px;
-   }
-   footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
-   }
-   footer .right-footer-block {
-     background-color: #3498DB;
-   }
-   footer .logo{
-     padding: 2em 0 2em 1.5em;
-   }
- }
+ /* CHKPT 28 Assignment Mobile Media Query */
 
-/* Media Queries */
+@media (max-width: 320px) {
+  	.container{
+  		width: 320px;
+  	}
+  	.one-half-buttons{
+  		margin: -70px 6% 20px;
+  	}
+  	.testimonials{
+  		width: 15%;
+  	}
+  	header .hero h1 {
+   		font-size:34px;
+   		padding-right: 40px;
+   		margin: 35px 0 0 -45px;
+ 	}
+ 	header .hero p {
+   		font-size: 12px;
+ 		padding-right: 80px;
+ 	}
+ 	.btn{
+ 		padding: 10px 10px;
+ 	}
+ 	.btn-hero{
+ 		margin-right: 90px;
+ 	}
+ 	header nav ul > li{
+ 		margin: 7px 15px 10px 0;
+ 	}
+ 	header nav ul > li.btn-outline{
+ 		padding: 5px 15px;
+ 	}
+ 	header .hero img{
 
-@media only screen 
-	and (min-width: 768px){
+ 	}
+ 	footer p{
+
+	}
+	footer nav ul{
+
+	}
+  }
+
+ @media (min-width: 768px){
 	.container {
 		width: 750px;
 	}
@@ -357,12 +402,51 @@ header nav ul > li.btn-outline {
 		width: 28%;
 	}
 	.one-fourth{
-		width: 30%;
+		width: 42%;
 	}
-}
-@media only screen 
-	and (min-width: 992px) {
-	.container {
+	header .hero{
+		margin-left: 10px;
+	}
+	.quote-shift{
+		margin-top: 0;
+	 }
+	 footer .logo{
+	 	margin: 0 -170px;
+   	    padding-top: 90px;
+	 }
+	 footer p{
+   	    width: 250px;
+        padding-left: 230px
+	 }
+	 footer nav ul{
+	 	width: 320px;
+	 	padding: 40px 0;
+	 	margin-left: -25px;
+	 }
+
+ @media (min-width: 992px){
+   footer {
+		background-image: linear-gradient(to left,
+      #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
+		height: 100px;
+	}
+   footer nav ul{
+     padding: 2.5em 0;
+     text-align: left;
+   }
+   footer p{
+   	 padding: 0;
+     text-align: left;
+     margin: 45px 5px 0
+   }
+   footer .right-footer-block {
+     background-color: #3498DB;
+   }
+   footer .logo{
+     padding: 30px 0 10px;
+     margin-left: 20px;
+   }
+   .container {
 		width: 970px;
 	}
 	.one-half{
@@ -374,41 +458,43 @@ header nav ul > li.btn-outline {
 	.one-fourth{
 		width:21%;
 	}
-}
+	header .hero{
+		margin-left: 15px;
+	}
+	.quote-shift{
+		margin-top: 10px;
+	 }
+	 .testimonials ul li{
+	 	margin-left: 10px;
+	 }
+ }
+
 @media only screen 
 	and (min-width: 1200px) {
 	.container{
 		width: 1170px;
 	}
-}
-
- /* CHKPT 28 Assignment Mobile Media Query */
-
-@media only screen 
-	and (max-width: 320px) {
-  	.container{
-  		width: 320px;
+	.one-half-buttons{
+  		margin-left: 10%;
   	}
-  	header .hero h1 {
-   	    font-size:40px;
-    }
- 	header .hero p {
-  	    font-size: 14px;
-    }
-  	header .hero h1 {
-   		font-size:38px;
+	.quote-shift{
+ 		margin-top: 10px;
+ 	}
+ 	.pricing h2, .pricing p{
+ 		margin-left: 50px;
+ 	}
+	header .hero{
+		margin-left: 50px;
+	}
+	footer {
+		background-image: linear-gradient(to left,
+      #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
+		height: 100px;
+	}
+	footer p{
 
- 	}
- 	header .hero p {
-   		font-size: 12px;
- 	}
- 	.btn{
- 		padding: 10px 10px;
- 	}
- 	header nav ul > li{
- 		margin: 7px 15px;
- 	}
- 	header nav ul > li.btn-outline{
- 		padding: 5px 15px;
- 	}
-  }
+	}
+	footer nav ul{
+
+	}
+}
