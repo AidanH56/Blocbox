@@ -617,6 +617,11 @@ header nav ul > li.btn-outline {
    padding:20px;
  }
 
+  /* Styling Assignment for CHKPT 34*/
+	.active{
+		background-color: red;
+	}
+
  /* Larger Mobile Devices */
 
  @media (min-width:460px) {
