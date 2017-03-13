@@ -46,7 +46,18 @@
      <div class="settings">
      	<img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
      	<p>Joey Kirk</p>
-     	<a href="#"><i class="fa fa-cog"></i></a>
+
+    <!-- Gear Cog -->
+      <ul class="menu-2 dropit-2">
+       <li>
+        <a href="#"><i class="fa fa-cog"></i></a>
+        <ul>
+        	<li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
+        	<li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
+        	<li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+        </ul>
+       </li>
+      </ul>
   	 </div>
    </nav>
 
@@ -59,6 +70,8 @@
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
+
+
          <ul class="menu">
            <li>
              <a href="#" class="btn">+ Add</a>
@@ -76,7 +89,7 @@
 
        <div class="content-item">
          <div class="item-box">
-         	<img src="http://i0.kym-cdn.com/entries/icons/original/000/020/349/SANESS.jpg">
+         	<img src="http://angelsignstudio.com/wp-content/uploads/2012/05/MAIN-PROPOSAL-FONT-AND-COLOR-STUDIES.jpg">
          </div>
        </div>
 
@@ -103,7 +116,7 @@
        <div class="content-item">
          <div class="item-box">
           <h2><a href="#">Sailor Moon is the Best</a></h2>
-          <p>I love girls dressed as sailor scouts~</p>
+          <p>By far one of the largest animes and manga known across the globe. With so much merchandise, a brand new animated series, and cosplays, how can it not be more popular?</p>
          </div>
        </div>
 
@@ -154,6 +167,7 @@
      $( "#menu" ).click(function() {
          $("#left-nav").toggleClass("open", 200);
      });
+     $(".menu-2").dropit();
    </script>
 </body>
 </html>

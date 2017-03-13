@@ -567,6 +567,18 @@ header nav ul > li.btn-outline {
      display:none;
    }
  }
+
+ /* Gear Icon */
+ .menu-2{
+ 	margin-top: 0px;
+ }
+
+ .dropit-2 .dropit-submenu li a {
+ 	text-align: left;
+ 	font-size: 12px;
+ 	float: none;
+ }
+
  .left-nav .site-logo {
    padding:20px 0;
    background:#34495E;

@@ -15,6 +15,15 @@
     float: right;
     display: inline-block;
 }
+
+.dropit-2{
+    list-style: none;
+    padding: 0;
+    margin: 3px 0 0;
+    float: right;
+    display: inline-block;
+}
+
 .dropit .dropit-trigger { position: relative; }
 .dropit .dropit-submenu {
     position: absolute;
@@ -27,7 +36,29 @@
 	padding: 20px;
 	margin: 20px 0 0;
 }
+
+ /* Styling Gear Cog Drop Down */
+ .dropit-2.dropit .dropit-submenu{
+    position: absolute;
+    top: -150px;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 120px;
+    list-style: none;
+    padding: 15px;
+    margin: 40px 0 0;
+ }
+
 .dropit .dropit-open .dropit-submenu { 
+    display: block; 
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+}
+
+/* Cont. Styling Gear Cog Drop Down */
+.dropit-2.dropit .dropit-open .dropit-submenu{
     display: block; 
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
@@ -43,13 +74,34 @@
   border-color: #FFFFFF transparent;
   display: block;
   width: 0;
-  z-index: 1;
+  z-index: 1; /* Makes the arrow appear above */
   top: -8px;
   right: 10px;
  }
+
+.dropit-2.dropit .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1; /* Makes the arrow appear above */
+  top: 100%;
+  right: 10px;
+  transform: rotate(180deg);
+ }
+
  .dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
+ }
+
+  .dropit-2.dropit .dropit-open .dropit-submenu li {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 5px;
  }
 
  /* Removes margin under last link */
@@ -59,6 +111,14 @@
  .dropit .dropit-open .dropit-submenu li a {
   color:#34495E;
   text-decoration: none;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Maitree", Helvetica, Arial, sans-serif;
   font-weight:100;
+ }
+
+ .dropit-2.dropit .dropit-open .dropit-submenu li a {
+  color:#34495E;
+  text-decoration: none;
+  font-family: "Maitree", Helvetica, Arial, sans-serif;
+  font-weight:100;
+  margin-left: -5px;
  }
