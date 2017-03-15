@@ -301,8 +301,12 @@ header nav ul > li.btn-outline {
  }
 
  /* MONEY BACK GUARANTEE*/
- .money-back h2, .money-back p{
- 	margin-bottom: 20px;
+ .money-back{
+ 	margin-bottom: -5px;
+    color: #FFFFFF;
+    background: #34495E url("../images/background.png") top center no-repeat;
+    background-size: cover;
+    padding: 1em 0px 20px 0px;
  }
  .money-back h2{
  	margin-left: 30px;
@@ -357,10 +361,32 @@ header nav ul > li.btn-outline {
   		width: 300px;
   	}
   	.one-half-buttons{
-  		margin: -70px 6% 20px;
+  		margin: -65px 2% 20px;
+  	}
+  	footer p{
+  	    margin-top: 30px;
+  	}
+  	footer nav ul{
+  		margin-right: 40px;
+  	}
+  	.one-third{
+  		margin-bottom: 45px;
   	}
   	.testimonials{
   		width: 15%;
+  	}
+  	.pricing h2, .pricing p{
+  		margin-right: 25px;
+  	}
+  	.box{
+  		margin-right: 20px;
+  	}
+  	.testimonials ul li{
+  	    width: 87%;
+  	}
+  	.quote-intro-header, .quote-intro-p{
+  		margin-right: 25px;
+
   	}
   	header .hero h1 {
    		font-size:30px;
@@ -372,11 +398,18 @@ header nav ul > li.btn-outline {
    		font-size: 12px;
  		padding-right: 20px;
  	}
+ 	header .hero img{
+ 		width: 310px;
+    	margin-left: -15px
+ 	}
  	.btn{
  		padding: 10px 10px;
  	}
  	.btn-hero{
  		margin-right: 20px;
+ 	}
+ 	.hero-logo{
+ 		width: 100px;
  	}
  	header nav ul > li{
  		margin: 7px 15px 10px 0;
@@ -384,7 +417,22 @@ header nav ul > li.btn-outline {
  	header nav ul > li.btn-outline{
  		padding: 5px 15px;
  	}
+ 	.money-back p{
+ 		margin-right: 25px;
+ 	}
   }
+
+@media (min-width: 321px){
+	footer p{
+  	    margin-top: 30px;
+  	}
+  	footer nav ul{
+  		margin-right: 40px;
+  	}
+  	.one-third{
+  		margin-bottom: 45px;
+  	}
+}
 
 @media (min-width: 768px) {
 
@@ -392,6 +440,12 @@ header nav ul > li.btn-outline {
     width:96%;
     min-height: 1px;
     margin: 0 2% 0px;
+  }
+  footer p{
+  	margin-top: 15px;
+  }
+  footer .logo{
+    padding: 1.8em;
   }
    .container {
       width: 750px;
@@ -428,6 +482,9 @@ header nav ul > li.btn-outline {
    .container {
       width: 970px;
     }
+    .container .footer-nav-block{
+
+    }
     .testimonials .one-fourth {
       width:21%;
     }
@@ -455,8 +512,9 @@ header nav ul > li.btn-outline {
      background-color: #3498DB;
    }
    footer .logo{
-     padding: 2em 0 2em 1.5em;
-     width:80px;
+     padding: 1.5em 20px 2em 1.5em;
+     width: 130px;
+     margin-left: 0px;
    }
 }
    
@@ -468,6 +526,9 @@ header nav ul > li.btn-outline {
   @media (min-width: 1920px) {
     .container {
       width: 1800px;
+    }
+    footer nav ul{
+      padding: 2.7em 0;
     }
   }
 
